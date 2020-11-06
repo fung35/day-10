@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="dlt">durant</button>
+<button id="zms">james</button><br>
+<img src="durant.jpg">
+<script>
+    var dlt = document.getElementById('dlt');
+    var zms = document.getElementById('zms');
+    var img = document.querySelector('img');
+    dlt.onclick = function (){
+        img.src = "durant.jpg";
+    }
+    zms.onclick = function (){
+        img.src = "james.jpg";
+    }
+    window.onbeforeunload = function (){
+        return "您确定要离开吗";
+    }
+</script>
+</body>
+</html>
